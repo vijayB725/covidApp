@@ -12,7 +12,12 @@ export class DataServiceService {
   getGolbalData() {
     return this.http.get(this.globalDataUrl, { responseType: "text" }).pipe(
       map(result => {
-        return result;
+        let rows = result.split("/n");
+        rows.forEach(row => {
+          let cols = row.split(",");
+          console.log(cols);
+        });
+        return [];
       })
     );
   }
