@@ -5,7 +5,7 @@ import { HomeComponent } from "./components/home/home.component";
 
 const appRoutes: Routes = [
   { path: "", component: HomeComponent },
-  { path: "Countries", component: CountriesComponent }
+  { path: "countries", component: CountriesComponent }
 ];
 
 @NgModule({
